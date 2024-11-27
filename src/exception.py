@@ -1,5 +1,5 @@
 import sys 
-
+from src.logger import logging
 def error_msg_detail(error , error_detail:sys):
     _,_,error_detail.exc_info() # It give three type of info and we are only intersted in last msg
     file_name = exc_tb.tb_frame.f_code.co_filename
